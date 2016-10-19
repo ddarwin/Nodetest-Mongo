@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h1.
+        User List
+    p User list count #{users.length}
+        table
+            tbody
+                each user, i in users
+                    tr
+                        td
+                            a(href="./#{user._id}") #{user.username}
+                        td
+                            a(href="./del/#{user._id}?username=#{user.username}")= "delete?"
+    p
+        a(href="/")= "Go to Home Page"

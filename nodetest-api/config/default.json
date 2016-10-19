@@ -1,0 +1,18 @@
+{
+  "dbConfig": {
+  	"user": "ddarwin",
+  	"pwd": "evan0329",
+    "host": "ds049456.mlab.com",
+    "port": "49456",
+    "db": "CloudFoundry_g3lerf44_smen54em"
+  },
+  "apiConfig": {
+    "user": "http://localhost:3001/api/"
+  },
+  "loadConfig": {
+    "webHost": "localhost",
+    "webPort": "3000",
+    "apiHost": "localhost",
+    "apiPort": "3001"
+  }
+}
