@@ -22,13 +22,16 @@ var dbConn;
 
 if (dbUser) {
 	console.log("The user is "+ dbUser);
-	dbconn = dbUser;
+	dbconn = dbUser+":";
 	dbconn += dbPwd+"@";
 }
 
 dbconn += config.get('dbConfig.host') +
   ':' + config.get('dbConfig.port') +
   '/' + config.get('dbConfig.db');
+
+console.log("The DB Connection String is "+dbconn);
+
 var db = monk(dbconn);
 
 var index = require('./routes/index');

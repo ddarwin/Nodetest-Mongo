@@ -106,7 +106,7 @@ router.post('/add', function(req, res) {
 
 /* POST to search form */
 router.post('/runsearch', function(req, res) {
-    // Set our internal DB variable
+   // Set our internal DB variable
     var db = req.db;
     var query = req.body.searchterm;
 
@@ -121,11 +121,13 @@ router.post('/runsearch', function(req, res) {
         { "addzip": query },
         ] };
 
+
     // console.log(search);
 
     var collection = db.get('usercollection');
     collection.find(search, {}, function(e, docs) {
-        // console.log(docs);
+    	console.log("The response from DB is "+e);
+        console.log("The docs contains:"+docs);
         res.render('userlist',
           {'users': docs });
     });
