@@ -1,7 +1,7 @@
 {
   "dbConfig": {
-  	"user": "ddarwin",
-  	"pwd": "evan0329",
+  	"user": "user",
+  	"pwd": "password",
     "host": "ds049456.mlab.com",
     "port": "49456",
     "db": "CloudFoundry_g3lerf44_smen54em"
